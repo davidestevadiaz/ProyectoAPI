@@ -7,6 +7,8 @@ window.onload = () =>{
 }
 
 function loadDoc(url) {
+
+    url="https://api.allorigins.win/raw?url="+encodeURIComponent(url);
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 1){

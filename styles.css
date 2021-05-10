@@ -24,8 +24,9 @@ header input, button{
 #global{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     background-color: var(--terciary-color);
+
 }
 
  /* CARTA */
@@ -63,4 +64,9 @@ header input, button{
     padding: 2rem;
     background-color: var(--primary-color);
     color: white;
+}
+
+#cambioPagina{
+    display: flex;
+    margin-top: 1rem;
 }
