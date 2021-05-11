@@ -119,8 +119,12 @@ function peticionBuscador() {
   leidoDelInput= evento.target.value;
   if(leidoDelInput!="")
   loadDoc("https://newsapi.org/v2/everything?q="+leidoDelInput+"&pageSize=12&apiKey=1c34e728a9ed40dbabbc3b34991bc560")
-  else
-  document.getElementById("global").innerHTML="Introduzca una peticion válida";
+  else{
+      img= document.createElement("img");
+      img.setAttribute("src", "img/notFound.jfif");
+      img.setAttribute("id", "img");
+  document.getElementById("global").appendChild(img);
+  }
 }
 
 function pasoPagina(){
